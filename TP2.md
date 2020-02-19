@@ -180,25 +180,49 @@ echo "Bravo ! "
 
 ## EXO 7
 
+Q1/Q2
+
 ```bash
 
 #!/bin/bash
 
-MIN=0
-MAX=0
+MIN=$1
+MAX=$1
 MOY=0
 MEM=0
 
+nb_val=$#
+
 for i in $(seq 1 $#)
 do
-	echo $1
+	
 	if [[ $1 -gt 100 || $1 -lt "-100" ]]; then
-		echo "mauvais paramètre"
-		echo $1
+		echo "Mauvais paramètre"
+		exit 1
+		
+	else
+	
+	if [ $1 -lt $MIN ]; then
+	
+	MIN=$1;	
+
+	else
+	
+	MAX=$1;
+
 	fi
-	$MEM = $(($MEM+$1))
-	echo $MEM
+
+
+	MEM=$(($MEM+$1))
+	
 	shift
+	
+	fi
+	
 done
+	moy=$(($MEM/$nb_val))
+	echo "Valeur moyenne: "$moy
+	echo "Valeur max: "$MAX
+	echo "Valeur min: "$MIN
 
 ```
