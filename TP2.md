@@ -20,15 +20,35 @@
 4. **my_var="test"** puis **echo $my_var** , on crée puis on affiche la variable.
 
 5. bash --> cette commande permet d'utiliser l'environnement bash. La variable **my_var** n'existe plus car cette variable est **local**.
-
    Pour quitter, il faut faire **exit**
 
-6.
+6. **my_var**="test" --> on crée notre variable 
 
-7.
+   **export my_var** on l'ajoute dans le .bashrc.
+   
+   **source ~/.bashrc** --> Elle devient variable environnement car on recharge le bashrc qui contient les variables.
+   
+   La variable est donc utilisable dans le bash.
+   
 
-8.
+7. **export NOMS="Samy Thierry"** --> on crée une variable d'environnement.
 
-9.
+  **source ~/.bashrc** --> on charge le bashrc.
+  
+  **echo $NOMS** --> affiche bien nos deux noms. Donc c'est fonctionnel.
+  
+  
+8. **echo "Bonjour à vous deux,"$NOMS** --> affiche biens la phrases avec nos deux prénoms.
 
-10.
+9. **unset** --> permet de supprimer une variable. L'espace mémoire est donc libéré.
+   
+   Une variable vide occupe un espace mémoire, elle ne contient simplement rien.
+
+10. **echo "\$HOME = "$HOME** --> **$HOME = /home/linux**
+
+    "\" Permet d'afficher le nom de la variable et non son contenu.
+    
+## EXO 2: Contrôle de MDP
+
+1.
+
