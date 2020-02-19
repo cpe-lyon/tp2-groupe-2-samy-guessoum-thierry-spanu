@@ -33,9 +33,9 @@
 
 7. **export NOMS="Samy Thierry"** --> on crée une variable d'environnement.
 
-  **source ~/.bashrc** --> on charge le bashrc.
+   **source ~/.bashrc** --> on charge le bashrc.
   
-  **echo $NOMS** --> affiche bien nos deux noms. Donc c'est fonctionnel.
+   **echo $NOMS** --> affiche bien nos deux noms. Donc c'est fonctionnel.
   
   
 8. **echo "Bonjour à vous deux,"$NOMS** --> affiche biens la phrases avec nos deux prénoms.
