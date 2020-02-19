@@ -52,6 +52,8 @@
     
 ## EXO 2: Contrôle de MDP
 
+```bash
+
 #!/bin/bash
 
 PASSWORD="mdp"
@@ -68,7 +70,11 @@ echo "nok"
 
 fi
 
+```
+
 ## EXO 3
+
+```bash
 
 #!/bin/bash
 
@@ -96,8 +102,35 @@ if [ $? = 1 ]; then
 echo "Error"
 
 fi
+```
 
 ## EXO 4
+
+```bash
+#!/bin/bash
+
+if [ -z "$1" ]; then
+
+echo "Utilisation" $0 "nom_utilisateur"
+
+
+else
+
+test=$(grep $1 /etc/passwd)
+
+if [ $? = 0 ]; then
+echo "ok"
+
+else
+
+echo "nok"
+
+fi
+
+fi
+```
+
+## EXO 5
 
 
 
