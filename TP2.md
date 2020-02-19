@@ -7,11 +7,11 @@
 2. **cd $HOME**-> ramène dans le répertoire personnel
 
 3. 
-  3.1 **LANG** --> spécifier la langue  au programme pour s'adapter à l'utilisateur
-  3.2 **PWD** --> variable qui spécifie le réperoire courant, afin de savoir ou l'on se trouve
-  3.3 **OLDPWD** --> variable qui spécifie le précédent répertoire courant ou l'on se trouvait.
-  3.4 **SHELL** --> Contient ou se trouve les ressources nécéssaires pour le shell.
-  3.5 **_** --> contient le dernier argument qui a été rentré. Si l'on écris cd .. --> ".." sera affiché.
+  3.1. **LANG** --> spécifier la langue  au programme pour s'adapter à l'utilisateur.
+  3.2. **PWD** --> variable qui spécifie le réperoire courant, afin de savoir ou l'on se trouve.
+  3.3. **OLDPWD** --> variable qui spécifie le précédent répertoire courant ou l'on se trouvait.
+  3.4. **SHELL** --> Contient ou se trouve les ressources nécéssaires pour le shell.
+  3.5. **_** --> contient le dernier argument qui a été rentré. Si l'on écris cd .. --> ".." sera affiché.
    
 4. **my_var="test"** puis **echo $my_var** , on crée puis on affiche la variable.
 
