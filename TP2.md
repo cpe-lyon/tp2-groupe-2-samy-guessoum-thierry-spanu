@@ -177,3 +177,28 @@ done
 echo "Bravo ! "
 
 ```
+
+## EXO 7
+
+```bash
+
+#!/bin/bash
+
+MIN=0
+MAX=0
+MOY=0
+MEM=0
+
+for i in $(seq 1 $#)
+do
+	echo $1
+	if [[ $1 -gt 100 || $1 -lt "-100" ]]; then
+		echo "mauvais paramètre"
+		echo $1
+	fi
+	$MEM = $(($MEM+$1))
+	echo $MEM
+	shift
+done
+
+```
