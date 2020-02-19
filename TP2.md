@@ -2,12 +2,9 @@
 
 ## Exo 1: Variable
 
-
 1. **printenv $PATH** ou **cho $PATH** --> affiche ou se trouve les commandes
 
-
 2. **cd $HOME**-> ramène dans le répertoire personnel
-
 
 3. 
    **LANG** --> spécifier la langue  au programme pour s'adapter à l'utilisateur.
@@ -22,7 +19,6 @@
    
 4. **my_var="test"** puis **echo $my_var** , on crée puis on affiche la variable.
 
-
 5. bash --> cette commande permet d'utiliser l'environnement bash. La variable **my_var** n'existe plus car cette variable est **local**.
    Pour quitter, il faut faire **exit**
    
@@ -36,22 +32,18 @@
    La variable est donc utilisable dans le bash.
    
    
-
 7. **export NOMS="Samy Thierry"** --> on crée une variable d'environnement.
 
    **source ~/.bashrc** --> on charge le bashrc.
   
    **echo $NOMS** --> affiche bien nos deux noms. Donc c'est fonctionnel.
    
-  
-  
+   
 8. **echo "Bonjour à vous deux,"$NOMS** --> affiche biens la phrases avec nos deux prénoms.
-
 
 9. **unset** --> permet de supprimer une variable. L'espace mémoire est donc libéré.
    
-   Une variable vide occupe un espace mémoire, elle ne contient simplement rien.
-   
+   Une variable vide occupe un espace mémoire, elle ne contient simplement rien. 
 
 10. **echo "\$HOME = "$HOME** --> **$HOME = /home/linux**
 
@@ -60,6 +52,54 @@
     
 ## EXO 2: Contrôle de MDP
 
+#!/bin/bash
 
-1.
+PASSWORD="mdp"
+
+read -sp "Entrer votre mot de passe :" mdp
+
+if [ $mdp = $PASSWORD ]; then
+
+echo "ok"
+
+else
+
+echo "nok"
+
+fi
+
+## EXO 3
+
+#!/bin/bash
+
+function is_number()
+{
+
+re='^[+-]?[0-9]+([.][0-9]+)?$'
+
+if ! [[ $1 =~ $re ]] ; then
+
+return 1
+
+else
+
+return 0
+
+fi
+
+}
+
+is_number $1
+
+if [ $? = 1 ]; then
+
+echo "Error"
+
+fi
+
+## EXO 4
+
+
+
+
 
