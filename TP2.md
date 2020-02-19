@@ -132,7 +132,48 @@ fi
 
 ## EXO 5
 
+```bash
+
+#!/bin/bash
+
+i=1
+final=1
+for i in $(seq 1 $1); do
+
+final=$(( $final * i ))
 
 
+done
 
+echo $final
 
+```
+
+## EXO 6 
+
+```bash 
+
+#!/bin/bash
+
+nb_rand=$(( $RANDOM % 1000 + 1 ))
+
+read -p "Entrer un nombre entre 1 et 1000 : " nb
+
+while [ $nb != $nb_rand ]
+
+do
+
+	if [ $nb -gt $nb_rand ]; then
+
+		echo "c'est moins !"
+		read -p "Nouvelle prop : " nb
+
+	else
+		echo "c'est plus !"
+		read -p "Nouvelle prop : " nb
+	fi
+done
+
+echo "Bravo ! "
+
+```
