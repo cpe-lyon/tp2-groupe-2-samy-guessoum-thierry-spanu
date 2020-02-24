@@ -184,6 +184,8 @@ Q1/Q2)
 
 ```bash
 
+; Contributors : Maxence & Alexis Défossé 
+
 #!/bin/bash
 
 MIN=$1
@@ -233,7 +235,7 @@ Q3)
 
 #!/bin/bash
 
-;; Contributors : Maxence & Alexis Défossé 
+; Contributors : Maxence & Alexis Défossé 
  
 MIN=$1
 MAX=$1
