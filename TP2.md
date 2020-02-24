@@ -180,7 +180,7 @@ echo "Bravo ! "
 
 ## EXO 7
 
-Q1/Q2
+Q1/Q2)
 
 ```bash
 
@@ -224,5 +224,60 @@ done
 	echo "Valeur moyenne: "$moy
 	echo "Valeur max: "$MAX
 	echo "Valeur min: "$MIN
+
+```
+
+Q3)
+
+```bash
+
+#!/bin/bash
+
+;; Contributors : Maxence & Alexis Défossé 
+ 
+MIN=$1
+MAX=$1
+MOY=0
+MEM=0
+bool=1
+ 
+nb_val=$1
+ 
+for i in $(seq 1 $1);do
+ 
+read -p "Choisissez une valeur:" var
+ 
+    if [[ $var -gt 100 || $var -lt "-100" ]]; then
+        echo "Mauvais paramètre"
+        exit 1
+       
+    else
+  
+    if [ $var -lt $MIN ]; then
+   
+    MIN=$var;   
+ 
+    else
+   
+    MAX=$var;
+ 
+    fi
+ 
+ 
+    MEM=$(($MEM+$var))
+ 
+   
+    shift
+   
+    fi
+   
+ 
+ 
+ 
+done
+    moy=$(($MEM/$nb_val))
+    echo "Valeur moyenne: "$moy
+    echo "Valeur max: "$MAX
+    echo "Valeur min: "$MIN
 
 ```
