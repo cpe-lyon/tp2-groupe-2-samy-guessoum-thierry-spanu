@@ -233,9 +233,11 @@ Q3)
 
 ```bash
 
+; Contributors : Maxence & Alexis Défossé 
+
 #!/bin/bash
 
-; Contributors : Maxence & Alexis Défossé 
+
  
 MIN=$1
 MAX=$1
