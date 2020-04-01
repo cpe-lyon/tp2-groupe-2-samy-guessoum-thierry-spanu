@@ -74,6 +74,9 @@ fi
 
 ## EXO 3
 
+Ecrivez un script qui prend un paramètre et utilise la fonction suivante pour vérifier que ce paramètre est un nombre réel :
+
+
 ```bash
 
 #!/bin/bash
@@ -106,6 +109,9 @@ fi
 
 ## EXO 4
 
+Écrivez un script qui vérifie l’existence d’un utilisateur dont le nom est donné en paramètre du script. Si le script est appelé sans nom d’utilisateur, il affiche le message : ”Utilisation : nom_du_script nom_utilisateur”,où nom_du_script est le nom de votre script récupéré automatiquement (si vous changez le nom de votre script, le message doit changer automatiquement)
+
+
 ```bash
 #!/bin/bash
 
@@ -132,6 +138,8 @@ fi
 
 ## EXO 5
 
+Écrivez un programme qui calcule la factorielle d’un entier naturel passé en paramètre (on supposera que l’utilisateur saisit toujours un entier naturel).
+
 ```bash
 
 #!/bin/bash
@@ -150,6 +158,8 @@ echo $final
 ```
 
 ## EXO 6 
+
+Écrivez un script qui génère un nombre aléatoire entre 1 et 1000 et demande à l’utilisateur de le deviner. Le programme écrira ”C’est plus !”, ”C’est moins !” ou ”Gagné !” selon les cas (vous utiliserez $RANDOM).
 
 ```bash 
 
@@ -180,7 +190,10 @@ echo "Bravo ! "
 
 ## EXO 7
 
-Q1/Q2)
+
+1. Écrivez un script qui prend en paramètres trois entiers (entre -100 et +100) et affiche le min, le max et la moyenne. Vous pouvez réutiliser la fonction de l’exercice 3 pour vous assurer que les paramètres sont bien des entiers.
+2. Généralisez le programme à un nombre quelconque de paramètres (pensez à SHIFT)
+
 
 ```bash
 
@@ -229,7 +242,8 @@ done
 
 ```
 
-Q3)
+3. Modifiez votre programme pour que les notes ne soient plus données en paramètres, mais saisies et
+stockées au fur et à mesure dans un tableau
 
 ```bash
 
